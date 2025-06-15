@@ -1,7 +1,6 @@
-Nathanael Morrison
 Product Maintenance
 
-Copyright (c) [2019] [(enter your name here)]
+Copyright (c) [2019] [(Nathanael Morrison)]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
