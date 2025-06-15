@@ -13,6 +13,7 @@ namespace ProductApps
         private decimal totalPayment;
         private decimal totalPaymentDelivery;
         private decimal totalPaymentWrap;
+        private decimal totalPaymentGST;
         private decimal delivery;
         private decimal wrapping;
         private decimal gst;
@@ -45,6 +46,11 @@ namespace ProductApps
             get { return totalPaymentWrap; }
             set { totalPaymentWrap = value; }
         }
+        public decimal TotalPaymentGST
+        {
+            get { return totalPaymentGST; }
+            set { totalPaymentGST = value; }
+        }
         private decimal Delivery
         {
             get { return delivery; }
@@ -71,6 +77,7 @@ namespace ProductApps
             Quantity = quantity;
             Delivery = 25;
             Wrapping = 5;
+            GST =  0.1M;
         }
 
         //Calculate the total payment
@@ -79,6 +86,7 @@ namespace ProductApps
             TotalPayment = Price * Quantity;
             TotalPaymentDelivery = TotalPayment + Delivery;
             TotalPaymentWrap = TotalPaymentDelivery + Wrapping;
+            TotalPaymentGST = TotalPaymentWrap + (TotalPayment * GST);
         }
     }
 }
